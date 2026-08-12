@@ -1,0 +1,8 @@
+/* Hide system cursor on desktop — only the RetroCursor follower is visible */
+
+@media (pointer: fine) {
+  html,
+  html * {
+    cursor: none !important;
+  }
+}

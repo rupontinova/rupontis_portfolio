@@ -1,0 +1,27 @@
+.shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background: #252425;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #111;
+  overflow: hidden;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #111;
+  overflow-y: auto;
+}

@@ -1,0 +1,81 @@
+.projects {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem 1.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+}
+
+.card {
+  width: min(100%, 250px);
+  flex: 0 0 min(100%, 250px);
+  scroll-snap-align: start;
+  border: 4px solid transparent;
+  border-radius: 2px;
+  background-color: #ffebcd;
+  transition: 0.15s all ease-in-out;
+  font-family: inherit;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 0 #5abb9a, 20px 20px 0 plum;
+  border-color: #2d0922;
+  transform: translate(-8px, -8px);
+}
+
+.link {
+  display: block;
+  padding: 0.6rem 0.7rem;
+  color: #000;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.title {
+  margin: 0 0 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  font-family: inherit;
+}
+
+.description {
+  margin: 0 0 0.35rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  font-family: inherit;
+}
+
+.tech {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  font-family: inherit;
+}
+
+.tech code {
+  font-family: inherit;
+}
+
+.dualLinks {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.25;
+  font-family: inherit;
+}
+
+.dualLinks a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.dualLinks a:hover {
+  text-decoration: none;
+}

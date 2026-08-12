@@ -1,0 +1,71 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.groupTitle {
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.4rem;
+  color: #7dd3fc;
+  font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(125, 211, 252, 0.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 0.9rem 0.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 64px;
+  border-radius: 10px;
+  background: #1e1e1e;
+  border: 1px solid #2f2f2f;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.card:hover .tile {
+  border-color: #4b4b4b;
+  transform: translateY(-2px);
+}
+
+.name {
+  font-size: 0.68rem;
+  line-height: 1.2;
+  color: #d4d4d4;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.barTrack {
+  display: block;
+  width: 100%;
+  max-width: 64px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.barFill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}

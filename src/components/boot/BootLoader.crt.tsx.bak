@@ -1,0 +1,48 @@
+/*
+ * DEPRECATED — old CRT boot loader (Press Start 2P + typewriter).
+ * Kept for reference. Active loader: BootLoader.tsx + window-loader.css
+ *
+"use client";
+
+import { useEffect } from "react";
+import { useBootTypewriter } from "@/hooks/useBootTypewriter";
+import "./boot-crt.css";
+
+type BootLoaderProps = {
+  onComplete?: () => void;
+};
+
+export function BootLoader({ onComplete }: BootLoaderProps) {
+  const { lines, showSecondLine, showLoadingDots, loadingDots, isComplete } =
+    useBootTypewriter();
+
+  useEffect(() => {
+    document.body.classList.add("boot-crt-active");
+    return () => document.body.classList.remove("boot-crt-active");
+  }, []);
+
+  useEffect(() => {
+    if (isComplete) {
+      onComplete?.();
+    }
+  }, [isComplete, onComplete]);
+
+  return (
+    <div className="boot-crt-root">
+      <div>
+        <h1 className="glowFlicker" aria-live="polite">
+          <span className="boot-line boot-line--primary">{lines[0]}</span>
+          {showSecondLine && (
+            <span className="boot-line boot-line--secondary">{lines[1]}</span>
+          )}
+          {showLoadingDots && (
+            <span className="boot-dots" aria-hidden>
+              {loadingDots}
+            </span>
+          )}
+        </h1>
+      </div>
+    </div>
+  );
+}
+*/

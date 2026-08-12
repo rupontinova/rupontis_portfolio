@@ -1,0 +1,41 @@
+.bar {
+  flex-shrink: 0;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem 1rem;
+  border-top: 1px solid #2a2a2a;
+  background: #111;
+}
+
+.prompt {
+  margin: 0;
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: clamp(1.1rem, 2.8vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.user {
+  color: #7ee787;
+  font-weight: 700;
+}
+
+.path {
+  color: #79c0ff;
+  font-weight: 700;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 2px;
+  background: #c9d1d9;
+  opacity: 0;
+  vertical-align: text-bottom;
+}
+
+.cursorVisible {
+  opacity: 1;
+}

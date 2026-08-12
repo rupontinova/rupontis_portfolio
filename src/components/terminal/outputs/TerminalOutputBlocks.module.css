@@ -1,0 +1,17 @@
+.block {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.block p {
+  margin: 0 0 0.65rem;
+}
+
+.block strong {
+  color: #ffebcd;
+}
+
+.block code {
+  color: #79c0ff;
+}

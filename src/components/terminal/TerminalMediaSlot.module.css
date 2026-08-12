@@ -1,0 +1,6 @@
+.slot {
+  flex: 1;
+  flex-shrink: 0;
+  min-height: clamp(8rem, 28vh, 20rem);
+  margin: 0.75rem 2rem 1.5rem;
+}
