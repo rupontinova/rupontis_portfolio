@@ -104,7 +104,7 @@ function useAudio(enabled: boolean) {
     const init = async () => {
       try {
         ctxRef.current = new AudioContext();
-        const res = await fetch("/sounds/sound.ogg");
+        const res = await fetch("/rupontis_portfolio/sounds/sound.ogg");
         if (!res.ok) return;
         bufferRef.current = await ctxRef.current.decodeAudioData(
           await res.arrayBuffer(),

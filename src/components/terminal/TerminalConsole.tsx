@@ -67,7 +67,7 @@ export function TerminalConsole() {
   useEffect(() => {
     const ctx = new AudioContext();
     audioCtxRef.current = ctx;
-    fetch("/sound/radio-beeppo.mp3")
+    fetch("/rupontis_portfolio/sound/radio-beeppo.mp3")
       .then((res) => res.arrayBuffer())
       .then((data) => ctx.decodeAudioData(data))
       .then((buffer) => {
@@ -200,7 +200,7 @@ export function TerminalConsole() {
         <TerminalIntro />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/me/clean.png"
+          src="/rupontis_portfolio/me/clean.png"
           alt=""
           aria-hidden="true"
           className={styles.avatar}

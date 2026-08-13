@@ -23,7 +23,7 @@ const TABS: Tab[] = [
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/me/clean_nova.png"
+            src="/rupontis_portfolio/me/clean_nova.png"
             alt="Ruponti Muin Nova"
             className={styles.windowPhoto}
           />
