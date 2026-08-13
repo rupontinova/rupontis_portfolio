@@ -31,7 +31,13 @@
 
 @media (max-width: 900px) {
   .avatar {
-    display: none;
+    display: block;
+    position: static;
+    height: auto;
+    max-height: 260px;
+    width: auto;
+    max-width: 60%;
+    margin: 0.5rem auto 1rem;
   }
 }
 
