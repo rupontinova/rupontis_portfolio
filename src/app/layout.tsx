@@ -9,8 +9,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nova | Portfolio",
-  description: "Nova's digital world — terminal portfolio",
+  title: "<Ruponti's Portfolio/>",
+  description: "Ruponti's digital world, terminal portfolio",
 };
 
 export default function RootLayout({
