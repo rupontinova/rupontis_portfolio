@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     href: "https://github.com/rupontinova/Inventory-Manager-StockPro-",
   },
   {
-    title: "rupontis_portfolio",
+    title: "rupontis portfolio",
     description: "This very site — a retro terminal-themed personal portfolio.",
     tech: "Next.js, TypeScript, Tailwind CSS",
     href: "https://github.com/rupontinova/rupontis_portfolio",
